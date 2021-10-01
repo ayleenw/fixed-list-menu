@@ -2,7 +2,7 @@
 #include "menu.hpp"
 #include <iostream>
 
-#define LINES 4;
+#define LINES 4
 
 using namespace std;
 
@@ -15,7 +15,7 @@ Menu::Menu(const char *menuTexts[], int size)
 void Menu::PrintMenuToLCD(int start)
 {
     // int end = start + LINES;
-    MenuList.PrintListWithMarkerFromTo(start, 4, MarkerPosition);
+    MenuList.PrintListWithMarkerFromTo(start, LINES, MarkerPosition);
 }
 
 void Menu::SetMarkerPosition(int position)
